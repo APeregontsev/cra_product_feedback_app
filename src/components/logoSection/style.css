@@ -1,0 +1,207 @@
+.header__menu {
+  width: 100%;
+  height: 120px;
+  background: rgb(115, 180, 245);
+  background: linear-gradient(
+    108deg,
+    rgba(115, 180, 245, 1) 2%,
+    rgba(159, 70, 241, 1) 44%,
+    rgba(230, 145, 144, 1) 100%
+  );
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+@media (max-width: 970px) {
+  .header__menu {
+    width: 33%;
+    height: 170px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header__menu {
+    width: 100%;
+    height: 78px;
+    border-radius: 0px;
+  }
+}
+
+.header__body {
+  display: flex;
+  flex-direction: column;
+}
+.header_body-title {
+  font-size: 20px;
+  font-weight: bold;
+
+  color: var(--White);
+}
+.header_body-subtitle {
+  color: #d8cdf9;
+  font-size: 15px;
+  font-weight: medium;
+  margin-bottom: 5px;
+}
+
+/* --------BURGER MENU---------------------------------------------------------------------- */
+
+.burger_menu {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .burger_menu {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .burger_menu:before,
+  .burger_menu:after {
+    content: "";
+    background-color: var(--White);
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .burger_menu:before {
+    top: 0px;
+  }
+
+  .burger_menu:after {
+    bottom: 0px;
+  }
+
+  /* --------при классе active---------------------------------------------------------------------- */
+  .burger_menu.active:before {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  .burger_menu.active:after {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+
+  .burger_menu.active .burger__span {
+    scale: 0;
+  }
+
+  /* --------при классе active---------------------------------------------------------------------- */
+
+  .header__menu {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .burger__span {
+    display: block;
+    position: absolute;
+    background-color: var(--White);
+    width: 25px;
+    height: 3px;
+    left: 0px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .burger__isolated {
+    display: block;
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+    left: 0px;
+    top: -1px;
+    z-index: 20;
+  }
+
+  .burger_menu_list {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 49px;
+    left: -230px;
+    height: calc(100vh - 98px);
+    width: 280px;
+    background-color: #f7f8fd;
+    z-index: 10;
+  }
+
+  .burger_menu_list.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* --------Radio BUttons---------------------------------------------------------------------- */
+
+.type__selection2 {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: var(--White);
+  border-radius: 10px;
+  width: 80%;
+  min-width: 240px;
+  height: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* --------Roadmap---------------------------------------------------------------------- */
+
+.roadmap2 {
+  margin-top: 20px;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.roadmap_title_wrapper2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.roadmap__title {
+}
+.roadmap__view {
+}
+.roadmap_items_wrapper2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+}
+
+.item {
+}
+.item__planned {
+}
+.item_number {
+}
+.item__progress {
+}
+.item__live {
+}

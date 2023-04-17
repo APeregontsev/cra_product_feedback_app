@@ -1,0 +1,118 @@
+/* --------Roadmap---------------------------------------------------------------------- */
+
+.roadmap {
+  width: 100%;
+  height: 170px;
+  background-color: var(--White);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 970px) {
+  .roadmap {
+    width: 33%;
+  }
+}
+
+@media (max-width: 650px) {
+  .roadmap {
+    display: none;
+  }
+}
+
+.roadmap_title_wrapper {
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.roadmap__title {
+  font-size: var(--FS-Title);
+  color: var(--Dark-Blue);
+  font-weight: bold;
+}
+.roadmap__view {
+  color: var(--Middle-Blue);
+  font-size: 12px;
+  text-decoration: underline;
+}
+.roadmap_items_wrapper {
+  padding: 10px 20px 20px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+}
+.item {
+  margin-left: 25px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.number {
+  color: var(--Dark-Blue);
+  font-weight: normal;
+}
+.item__planned {
+  cursor: pointer;
+}
+
+.item__planned::before {
+  content: "";
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+  background-color: var(--Planned);
+  position: absolute;
+  top: 8px;
+  left: -20px;
+}
+
+.item__progress {
+  cursor: pointer;
+}
+
+.item__progress::before {
+  content: "";
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+  background-color: var(--Violette);
+  position: absolute;
+  top: 8px;
+  left: -20px;
+}
+
+.item__live {
+  cursor: pointer;
+}
+.item__live::before {
+  content: "";
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+  background-color: var(--Live);
+  position: absolute;
+  top: 8px;
+  left: -20px;
+}
+
+.item_number {
+  font-weight: bold;
+  color: #647196;
+  font-size: 16px;
+}

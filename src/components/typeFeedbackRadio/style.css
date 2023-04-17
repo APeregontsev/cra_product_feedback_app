@@ -1,0 +1,36 @@
+.radio__rating {
+  overflow: hidden;
+  display: none;
+}
+
+.radio__rating:checked + .radio__label {
+  background-color: var(--Middle-Blue);
+  color: var(--White);
+}
+
+.radio__label {
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  background-color: var(--Light-Blue);
+  color: var(--Middle-Blue);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.radio__label:hover {
+  background-color: var(--Light-blue-hover);
+}
+
+.rating__digit {
+  font-size: 12px;
+  font-weight: bold;
+}

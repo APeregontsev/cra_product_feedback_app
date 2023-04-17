@@ -1,0 +1,22 @@
+.item__type {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  height: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  background-color: var(--Light-Blue);
+  color: var(--Middle-Blue);
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+@media (max-width: 538px) {
+  .item__type {
+    margin-bottom: 5px;
+  }
+}

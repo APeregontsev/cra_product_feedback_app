@@ -1,0 +1,19 @@
+.add_feedback {
+  background-color: var(--Violette);
+  border-radius: 10px;
+  width: 140px;
+  height: 40px;
+  color: var(--White);
+
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.add_feedback:hover {
+  background-color: var(--Violette-hover);
+}

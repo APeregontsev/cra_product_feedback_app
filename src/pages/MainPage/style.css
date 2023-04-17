@@ -1,0 +1,127 @@
+/* --------wrapper---------------------------------------------------------------------- */
+
+.wrapper {
+  padding: 60px 20px 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  min-height: 100%;
+  gap: 30px;
+}
+
+@media (max-width: 970px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    gap: 0px;
+  }
+}
+
+/* --------menu-section---------------------------------------------------------------------- */
+
+.menu_section {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 970px) {
+  .menu_section {
+    width: 800px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 830px) {
+  .menu_section {
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 830px) {
+  .main_section {
+    width: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .menu_section {
+    width: 100%;
+  }
+}
+
+/* --------Select-type---------------------------------------------------------------------- */
+.type__selection {
+  padding: 20px;
+  background-color: var(--White);
+  border-radius: 10px;
+  width: 100%;
+  min-width: 240px;
+  height: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 970px) {
+  .type__selection {
+    width: 33%;
+  }
+}
+
+@media (max-width: 650px) {
+  .type__selection {
+    display: none;
+  }
+}
+
+/* --------menu-section---------------------------------------------------------------------- */
+.main_section {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: auto;
+}
+
+.opacity {
+  opacity: 0.3;
+}
+
+@media (max-width: 830px) {
+  .main_section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .main_section {
+    gap: 0px;
+  }
+}
+
+/* --------Items---------------------------------------------------------------------- */
+
+.items_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
